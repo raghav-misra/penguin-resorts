@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Yatra+One|Merienda+One|Poor+Story');
+
+#title{
+    font-family: 'Merienda One';
+    font-size: 25pt;
+    color: royalblue;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body{
+    background-image: url("imgs/trans-tex.png");
+    margin: 0%;
+    padding: 0%;
+    min-height: 100%;
+    height: 100%;
+    min-width: 100%;
+    width: 100%;
+}
+
+header{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background: white;
+    border-style: solid;
+    border-bottom-width: 5px;
+    border-color: white;
+    line-height: 40pt;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    scroll-behavior: smooth;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);   
+}
+
+#hthumb{
+    width: 55px;
+    float: right;
+}
+
+#head-ad{
+    background-image: url(imgs/ad-header.jpg);
+    padding: 0;
+    margin: 0;
+}
+
+.shiphome{
+    width: 200pt;
+    height: 200pt;
+    border-style: solid;
+    border-width: 7pt;
+    border-color: white;
+    border-radius: 120px;
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.685), 0 17px 50px 0 rgba(255, 255, 255, 0.664);
+}
+
+.tab{
+    font-family: 'Poor Story';
+    font-size: 23pt;
+    border-style: solid;
+    border-color: white;
+    text-decoration-line: none;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    color:white;
+    border-width: 2pt;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    display: inline-block;
+    vertical-align: middle;
+    width: 150pt;
+    text-align: center;
+}
+
+.sechead{
+    font-family: 'Yatra One';
+    font-size: 40px;
+    color: royalblue;
+    font-weight: 300;
+}
+
+#why-tab{
+    background: white;;
+    min-width: 100%;
+    width: 100%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.tab:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}   
+
+.options{
+    height: 100%; 
+    border-style: solid;
+    border-color: white;
+    border-width: 4pt;
+    border-radius: 25pt;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;  
+}
+
+h3{
+    font-family: 'Yatra One';
+}
+
+h2{
+    font: 'Yatra One';    
+}
+
+.options:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
