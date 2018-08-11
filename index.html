@@ -8,21 +8,43 @@
     <title>Penguin Resorts</title>
 </head>
 <body> 
-    <header id="myHeader">
-        <span id="title">&nbsp;Penguin Resorts&nbsp;&nbsp;</span>
-        <a class="tab">&nbsp;Penguin Home&nbsp;</a>
+    <script>    
+        function goToLocPic(iname){
+            document.getElementById("locpic").src = iname;
+            setTimeout(function(){ location.href="#locpic"; }, 100);
+        }
+        
+    </script>
+
+    <header id="main">
+        <span id="title" onclick="location.href = '#main';">&nbsp;Penguin Resorts&nbsp;&nbsp;</span>
+        <a class="tab" href="#whyhead">&nbsp;Why Penguin?&nbsp;</a>
         <span></span>
-        <a class="tab" href="#why-tab">&nbsp;Why Penguin?&nbsp;</a>
+        <a class="tab" href="#avrhead">&nbsp;Our Rooms&nbsp;</a>
         <span></span>
-        <a class="tab">&nbsp;Prices And Deals&nbsp;</a>
+        <a class="tab" href="#lochead">&nbsp;Our Locations&nbsp;</a>
+        <span></span>
+        <a class="tab" href="mailto:support@hackingtons.com">&nbsp;Reserve A Suite&nbsp;</a>
         <img id="hthumb" src="imgs/header-thumb.png">
     </header>
 
-    
-    <br>
     <center>
-        <div id="why-tab">
-            <span class="sechead">Why Penguin?</span>
+        <div class="section" style="background: url(imgs/ad-header.jpg); border-bottom: 7.5px solid white;">
+            <br>
+            <span id="mainhead">Penguin Resorts</span>
+            <br>
+            <span id="slogan">═════════════════<br>Comfort Worldwide</span>
+            <br>
+            <br>
+            <br>
+            <a href="mailto:support@hackingtons.com" class="headlnk">Reserve Now!</a>
+            <br>
+            <br>
+        </div>
+        <br><br><br>
+        <div class="section">
+            <br>
+            <span id="whyhead" class="sechead">Why Penguin?</span>
             <br>
             <h3>
                 Penguin provides many amenities such as pools, tennis courts, boat rentals and more,<br>
@@ -33,13 +55,69 @@
                 This location comes with everything you know and love, and more!<br>
                 Take guided tours to see a rare species of penguin, as well as other wildlife!
             </h3>
-            <h2>View Our Available Rooms For Booking:</h2>
-            <img class="options" src="imgs/twin-opt.png">
-            <img class="options" src="imgs/queen-opt.png">
-            <img class="options" src="imgs/king-opt.png">
+            <hr class="sep">
         </div>
+        <br><br><br>
+        <div class="section">
+                <br>
+                <span class="sechead" id="avrhead">View Our Available Rooms For Booking:</span>\
+                <br>
+                <div class="opts">
+                        <span class="suitesub">Double Twins Suite</span>
+                        <br>
+                        <img src="imgs/twin-bed.png" style="border: 5px solid white; border-radius: 20pt;">
+                        <br>    
+                        <br>
+                        <a href="mailto:support@hackingtons.com" class="buylnk">Get This Suite</a>
+                        <br>
+                    </div>
+                <div class="opts">
+                        <span class="suitesub">Single Queen Suite</span>
+                        <br>
+                        <img src="imgs/qun-bed.png" style="border: 5px solid white; border-radius: 20pt;">
+                        <br>    
+                        <br>
+                        <a href="mailto:support@hackingtons.com" class="buylnk">Get This Suite</a>
+                        <br>
+                    </div>
+                <div class="opts">
+                    <span class="suitesub">Single King Suite</span>
+                    <br>
+                    <img src="imgs/king-bed.png" style="border: 5px solid white; border-radius: 20pt;">
+                    <br>    
+                    <br>
+                    <a href="mailto:support@hackingtons.com" class="buylnk">Get This Suite</a>
+                    <br>
+                </div>
+                <hr class="sep">
+        </div>
+        <br><br><br>
+        <div class="section">
+            <br>
+            <span id="lochead" class="sechead">Our Worldwide Locations</span>
+            <h2>We have locations in:</h2>  
+            <h3>
+                <li onclick="goToLocPic('imgs/max-loc.png');">Maxwell Bay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li onclick="goToLocPic('imgs/gala-loc.png');">The Galápagos Islands</li>
+                <li onclick="goToLocPic('imgs/loc-loc.png');">Port Lockroy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li onclick="goToLocPic('imgs/para-loc.png');">Paradise Harbor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </h3>
+            <img src="" id="locpic">
+            <br>
+            <hr class="sep">
+        </div>
+        <br><br><br>
+        
     </center>
+    <div style="background: transparent; font-size:18px; position:fixed; bottom:15px; right:15px;">
+        <img src="imgs/home-button.png" id="homeclick" onclick="location.href = '#main';">
+    </div>
     <center>
+        <footer style="background: white; padding: 0%; border: 50px solid white;">
+            <hr class="sep"> 
+            <h2>If the buttons do not work, please email <br><i>support@hackingtons.com</i> to reserve a suite.</h2>
+            <hr class="sep"> 
+        </footer>
     </center>
 </body>
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Yatra+One|Merienda+One|Poor+Story');
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre|Merienda+One|Poor+Story|Great+Vibes');
 
 #title{
     font-family: 'Merienda One';
@@ -18,13 +18,42 @@ body{
     width: 100%;
 }
 
+.opts{
+    width:325px; 
+    max-width: 325px; 
+    padding: 10pt;
+    padding-bottom: 15pt;
+    padding-top: 5pt;
+    display: inline-block;
+    background: royalblue;
+    border-style: solid;
+    border-color: white;
+    border-width: 4pt;
+    border-radius: 25pt;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+.suitesub{
+    color:white;
+    font-family: 'Proza Libre';
+    font-size: 20pt;
+
+}
+
+.opts:hover{
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
+}
+
 header{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
     background: white;
     border-style: solid;
     border-bottom-width: 5px;
     border-color: white;
-    line-height: 40pt;
+    line-height: 40pt;  
 }
 
 html{
@@ -75,13 +104,67 @@ html{
 }
 
 .sechead{
-    font-family: 'Yatra One';
-    font-size: 40px;
+    font-family: 'Great Vibes';
+    font-size: 60px;
     color: royalblue;
     font-weight: 300;
 }
 
-#why-tab{
+#mainhead{
+    color:midnightblue;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    font-size: 60pt;
+    font-family: 'Great Vibes';
+    text-shadow: 2px 2px 4px white, 4px 4px 4px midnightblue, 2px 2px 4px white, 2px 2px 4px midnightblue;
+}
+
+#slogan{
+    color:midnightblue;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    font-size: 30pt;
+    font-family: 'Great Vibes';
+    text-shadow: 2px 2px 4px white, 4px 4px 4px midnightblue, 2px 2px 4px white, 2px 2px 4px midnightblue;
+}
+
+#slogan:hover{
+    font-size: 40pt;
+}
+#mainhead:hover{
+    font-size: 70pt;
+}
+
+.picktxt{
+    font-family: 'Proza Libre';
+    
+}
+
+.headlnk{
+    font-family: 'Proza Libre';
+    font-size: 23pt;
+    border-style: solid;
+    border-color: white;
+    text-decoration-line: none;
+    background: midnightblue;
+    color:white;
+    border-width: 2pt;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    display: inline-block;
+    vertical-align: middle;
+    width: 175pt;
+    text-align: center;
+}
+
+.headlnk:hover{
+    font-size: 33pt;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    width: 250pt;
+}
+
+.section{
     background: white;;
     min-width: 100%;
     width: 100%;
@@ -92,25 +175,69 @@ html{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }   
 
-.options{
-    height: 100%; 
-    border-style: solid;
-    border-color: white;
-    border-width: 4pt;
-    border-radius: 25pt;
-    transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;  
+.sep{
+    height: 0;
+    border-top-width: 7px;
+    border-color: mediumblue;
 }
 
 h3{
-    font-family: 'Yatra One';
+    font-family: 'Proza Libre';
+    color: midnightblue;
+}
+
+li{
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+#locpic{
+    border: 7px solid white; 
+    border-radius: 50px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+li:hover{
+    color: #ff5e5e;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 h2{
-    font: 'Yatra One';    
+    font-family: 'Proza Libre';    
+    font-size: 30px;
 }
 
-.options:hover{
+
+
+#homeclick{
+    width: 10%;
+    float: right; 
+    border-radius: 50px;
+    border: 5px solid white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.buylnk{
+    font-family: 'Proza Libre';
+    font-size: 23pt;
+    border-style: solid;
+    border-color: white;
+    text-decoration-line: none;
+    background: midnightblue;
+    color:white;
+    border-width: 2pt;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    display: inline-block;
+    vertical-align: middle;
+    width: 175pt;
+    text-align: center;
+}
+
+.buylnk:hover{
+    font-size: 27pt;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    width: 200pt;
 }
 
